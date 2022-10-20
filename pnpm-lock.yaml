@@ -3,12 +3,10 @@ lockfileVersion: 5.4
 specifiers:
   '@gatsbyjs/parcel-namer-relative-to-cwd': ^1.9.0
   '@parcel/config-default': ^2.7.0
-  parcel-resolver-ignore: ^2.1.3
 
 dependencies:
   '@gatsbyjs/parcel-namer-relative-to-cwd': 1.9.0_@parcel+core@2.7.0
   '@parcel/config-default': 2.7.0_@parcel+core@2.7.0
-  parcel-resolver-ignore: 2.1.3_parcel@2.7.0
 
 packages:
 
@@ -732,19 +730,6 @@ packages:
     engines: {node: '>= 12.0.0'}
     dependencies:
       '@parcel/types': 2.7.0_@parcel+core@2.7.0
-    transitivePeerDependencies:
-      - '@parcel/core'
-    dev: false
-
-  /@parcel/reporter-cli/2.7.0_@parcel+core@2.7.0:
-    resolution: {integrity: sha512-80gEODg8cnAmnxGVuaSVDo8JJ54P9AA2bHwSs1cIkHWlJ3BjDQb83H31bBHncJ5Kn5kQ/j+7WjlqHpTCiOR9PA==}
-    engines: {node: '>= 12.0.0', parcel: ^2.7.0}
-    dependencies:
-      '@parcel/plugin': 2.7.0_@parcel+core@2.7.0
-      '@parcel/types': 2.7.0_@parcel+core@2.7.0
-      '@parcel/utils': 2.7.0
-      chalk: 4.1.2
-      term-size: 2.2.1
     transitivePeerDependencies:
       - '@parcel/core'
     dev: false
@@ -1515,11 +1500,6 @@ packages:
       xdg-basedir: 4.0.0
     dev: false
 
-  /get-port/4.2.0:
-    resolution: {integrity: sha512-/b3jarXkH8KJoOMQc3uVGHASwGLPq3gSFJ7tgJm2diza+bydJPTGOibin2steecKeOylE8oY2JERlVWkAJO6yw==}
-    engines: {node: '>=6'}
-    dev: false
-
   /get-stream/5.2.0:
     resolution: {integrity: sha512-nBF+F1rAZVCu/p7rjzgA+Yb4lfYXrpl7a6VmJrU8wF9I1CKvP/QwPNZHnOlwbTkY6dvtFIzFMSyQXbLoTQPRpA==}
     engines: {node: '>=8'}
@@ -1957,47 +1937,6 @@ packages:
     engines: {node: '>=8'}
     dev: false
 
-  /parcel-resolver-ignore/2.1.3_parcel@2.7.0:
-    resolution: {integrity: sha512-C8uLvR4o7SPRSsQ/Nylm1/PdsLwn/Z9bzCs66qT3XIebJC7ojaFFF3MDl/mie5audngjcFF8wzU0AoEQkZq2pA==}
-    engines: {parcel: '>=2.0.0'}
-    peerDependencies:
-      parcel: '>=2.0.0'
-    dependencies:
-      parcel: 2.7.0
-    dev: false
-
-  /parcel/2.7.0:
-    resolution: {integrity: sha512-pRYwnivwtNP0tip8xYSo4zCB0XhLt7/gJzP1p8OovCqkmFjG9VG+GW9TcAKqMIo0ovEa9tT+/s6gY1Qy+BONGQ==}
-    engines: {node: '>= 12.0.0'}
-    hasBin: true
-    peerDependenciesMeta:
-      '@parcel/core':
-        optional: true
-    dependencies:
-      '@parcel/config-default': 2.7.0_@parcel+core@2.7.0
-      '@parcel/core': 2.7.0
-      '@parcel/diagnostic': 2.7.0
-      '@parcel/events': 2.7.0
-      '@parcel/fs': 2.7.0_@parcel+core@2.7.0
-      '@parcel/logger': 2.7.0
-      '@parcel/package-manager': 2.7.0_@parcel+core@2.7.0
-      '@parcel/reporter-cli': 2.7.0_@parcel+core@2.7.0
-      '@parcel/reporter-dev-server': 2.7.0_@parcel+core@2.7.0
-      '@parcel/utils': 2.7.0
-      chalk: 4.1.2
-      commander: 7.2.0
-      get-port: 4.2.0
-      v8-compile-cache: 2.3.0
-    transitivePeerDependencies:
-      - cssnano
-      - postcss
-      - purgecss
-      - relateurl
-      - srcset
-      - terser
-      - uncss
-    dev: false
-
   /parent-module/1.0.1:
     resolution: {integrity: sha512-GQ2EWRpQV8/o+Aw8YqtfZZPfNRWZYkbidE9k5rpl/hC3vtHHBfGm2Ifi6qWV+coDGkrUKZAxE3Lot5kcsRlh+g==}
     engines: {node: '>=6'}
@@ -2230,11 +2169,6 @@ packages:
       stable: 0.1.8
     dev: false
 
-  /term-size/2.2.1:
-    resolution: {integrity: sha512-wK0Ri4fOGjv/XPy8SBHZChl8CM7uMc5VML7SqiQ0zG7+J5Vr+RMQDoHa2CNT6KHUnTGIXH34UDMkPzAUyapBZg==}
-    engines: {node: '>=8'}
-    dev: false
-
   /terser/5.15.1:
     resolution: {integrity: sha512-K1faMUvpm/FBxjBXud0LWVAGxmvoPbZbfTCYbSgaaYQaIXI3/TdI7a7ZGA73Zrou6Q8Zmz3oeUTsp/dj+ag2Xw==}
     engines: {node: '>=10'}
@@ -2310,10 +2244,6 @@ packages:
   /utility-types/3.10.0:
     resolution: {integrity: sha512-O11mqxmi7wMKCo6HKFt5AhO4BwY3VV68YU07tgxfz8zJTIxr4BpsezN49Ffwy9j3ZpwwJp4fkRwjRzq3uWE6Rg==}
     engines: {node: '>= 4'}
-    dev: false
-
-  /v8-compile-cache/2.3.0:
-    resolution: {integrity: sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==}
     dev: false
 
   /weak-lru-cache/1.2.2:
