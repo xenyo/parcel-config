@@ -1,5 +1,5 @@
 {
   "extends": "@parcel/config-default",
   "namers": ["@gatsbyjs/parcel-namer-relative-to-cwd"],
-  "resolvers": ["parcel-resolver-ignore", "..."]
+  "resolvers": ["@xenyo/parcel-resolver-ignore", "..."]
 }
