@@ -5,6 +5,10 @@
   "main": "index.json",
   "dependencies": {
     "@gatsbyjs/parcel-namer-relative-to-cwd": "^1.9.0",
-    "@parcel/config-default": "^2.7.0"
-  }
+    "@parcel/config-default": "^2.7.0",
+    "@xenyo/parcel-resolver-ignore": "^2.1.4"
+  },
+  "parcelIgnore": [
+    ".*node_modules/.*"
+  ]
 }
